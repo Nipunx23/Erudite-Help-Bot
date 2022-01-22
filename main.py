@@ -163,7 +163,7 @@ async def on_message(message):
     if message.author == client.user:
       return
 
-    if message.channel.id == 934534628604260413:
+    if message.channel.id in [934559832806158337,934559996899897374,934560027606413362,934560060296790098]:
       response = MODEL.chat(message.content.lower(),model,words,labels,data,stemmer)
       await message.channel.send(response)
 
