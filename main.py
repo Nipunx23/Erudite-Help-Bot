@@ -13,6 +13,7 @@ import nltk
 from nltk.stem.lancaster import LancasterStemmer
 import model as MODEL
 
+#Bot one time run start up 
 TOKEN = os.environ['DISCORD_TOKEN']
 GUILD = os.getenv('DISCORD_GUILD')
 intents=discord.Intents.all()
@@ -22,7 +23,6 @@ cogs = [music]
 
 for i in range(len(cogs)):
   cogs[i].setup(client)
-
 
 stemmer= LancasterStemmer()  
 ops.reset_default_graph()
@@ -76,7 +76,7 @@ model = tflearn.DNN(net)
 model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
 model.save('model.tflearn')
 
-################################################
+## COMMANDS AND EVENTS ##
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
