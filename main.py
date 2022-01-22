@@ -30,7 +30,7 @@ words=[]
 docx=[]
 docy=[]
 labels=[]
-f=open('intents.json')
+f=open('intents.json', encoding="utf8")
 data=json.load(f)
 for intent in data['intents']:
     for pattern in intent["patterns"]:
