@@ -167,48 +167,49 @@ async def on_message(message):
       response = MODEL.chat(message.content.lower(),model,words,labels,data,stemmer)
       await message.channel.send(response)
       
-    if 'kys' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+    else:
+      if 'kys' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'faggot' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'faggot' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'fag' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'fag' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'fuck' in message.content.lower():
-      response ="That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'fuck' in message.content.lower():
+        response ="That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'nigger' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'nigger' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'nigga' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'nigga' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'kill urself' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'kill urself' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'kill yourself' in message.content.lower():
-      response = "That is not appropriate to say to anyone. Please watch your language."
-      await message.channel.send(response)
+      if 'kill yourself' in message.content.lower():
+        response = "That is not appropriate to say to anyone. Please watch your language."
+        await message.channel.send(response)
 
-    if 'kms' in message.content.lower():
-      response = "Help is available, speak with a counselor today by calling the National Suicide Prevention Lifeline at 800-273-8255"
-      await message.channel.send(response)
+      if 'kms' in message.content.lower():
+        response = "Help is available, speak with a counselor today by calling the National Suicide Prevention Lifeline at 800-273-8255"
+        await message.channel.send(response)
 
-    if 'kill my self' in message.content.lower():
-      response = "Help is available, speak with a counselor today by calling the National Suicide Prevention Lifeline at 800-273-8255"
-      await message.channel.send(response)
+      if 'kill my self' in message.content.lower():
+        response = "Help is available, speak with a counselor today by calling the National Suicide Prevention Lifeline at 800-273-8255"
+        await message.channel.send(response)
 
-    if 'suicide' in message.content.lower():
-      response = "Help is available, Speak with a counselor today by calling the National Suicide Prevention Lifeline at 800-273-8255"
-      await message.channel.send(response)
+      if 'suicide' in message.content.lower():
+        response = "Help is available, Speak with a counselor today by calling the National Suicide Prevention Lifeline at 800-273-8255"
+        await message.channel.send(response)
 
 client.run(TOKEN)
