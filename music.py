@@ -21,12 +21,14 @@ class music(commands.Cog):
     voice_channel = ctx.author.voice.channel
     if ctx.voice_client is None:
       await voice_channel.connect()
+      await ctx.send("JOINED ✔")
     else:
       await ctx.voice_client.move_to(voice_channel)
 
   @commands.command()
   async def disconnect(self,ctx):
     await ctx.voice_client.disconnect()
+    await ctx.send("DISCONNECTED ✔")
 
   @commands.command()
   async def play(self,ctx,url):
@@ -119,12 +121,12 @@ class music(commands.Cog):
   @commands.command(aliases = ['stop'])
   async def pause(self,ctx):
     ctx.voice_client.pause()
-    await ctx.send("|PAUSED|")
+    await ctx.send("PAUSED ⏸️")
   
   @commands.command()
   async def resume(self,ctx):
     ctx.voice_client.resume()
-    await ctx.send("|RESUME|")    
+    await ctx.send("RESUMED ▶️")    
 
 def setup(client):
   client.add_cog(music(client))
