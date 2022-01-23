@@ -4,6 +4,7 @@ This is a python based discord bot developed by Team Erudite for the event Produ
 
 The following are a list of additional files you'll need to pip install:
 > PyNaCl
+
 > youtube_dl
 > pytube
 > discord.py
