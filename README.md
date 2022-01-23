@@ -6,14 +6,23 @@ The following are a list of additional files you'll need to pip install:
 > PyNaCl
 
 > youtube_dl
+
 > pytube
+
 > discord.py
+
 > ffmpeg(refer this video: https://www.youtube.com/watch?v=IECI72XEox0)
+
 > tensorflow
+
 > json
+
 > numpy
+
 > nltk
+
 > tflearn
+
 
 You'll need your own bot token which must not and cannot be shared publically online
 
