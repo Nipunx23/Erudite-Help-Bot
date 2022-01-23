@@ -14,6 +14,7 @@ from nltk.stem.lancaster import LancasterStemmer
 import model as MODEL
 
 #Bot one time run start up 
+xrapidkey='068306625bmshb2cadd6bcb96eaap19c44cjsn716c5846f448'
 TOKEN = os.environ['DISCORD_TOKEN']
 GUILD = os.getenv('DISCORD_GUILD')
 intents=discord.Intents.all()
